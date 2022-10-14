@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .card-question-component__question{
+        @apply
+        mb-3
+        font-medium
+    }
+}
