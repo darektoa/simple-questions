@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .card-question-checkbox-component{
+        @apply
+        w-4
+        h-4
+    }
+}
