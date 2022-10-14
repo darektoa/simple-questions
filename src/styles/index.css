@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    html{
+        color: #111;
+        @apply bg-sky-100;
+    }
+
+    main{
+        @apply w-full
+    }
+
+    /* *{border: 1px solid red} */
+}
+
+@layer components{
+    .container{
+        @apply w-full max-w-screen-lg mx-auto px-5
+    }
+}
