@@ -14,9 +14,10 @@ const Result = () => {
             </Card>
 
             {data.map(item => (
-                <Card.Question data={item}
-                    className="w-full max-w-lg mb-4 flex flex-col"
+                <Card.Question className="w-full max-w-lg mb-4 flex flex-col"
+                    data={item}
                     disabled={true}
+                    key={item.id}
                 />
             ))}
         </section>
