@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .card-component{
+        @apply
+        w-auto
+        p-6 
+        bg-white
+        rounded-lg 
+        shadow-lg
+        relative
+        overflow-hidden
+    }
+
+    .card-component--disabled{
+        @apply 
+        after:w-full
+        after:h-full
+        after:flex
+        after:absolute
+        after:top-0
+        after:left-0
+        after:bg-black
+        after:bg-opacity-10
+        after:cursor-not-allowed
+    }
+}
